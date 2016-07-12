@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlightApp.Views.AddFlightPage">
+  <StackLayout Orientation="Vertical">
+    <Entry x:Name="FlightNumber" Placeholder="e.g. 2424" Text="{Binding FlightNumber}"/>
+    <Entry x:Name="DepartingStation" Placeholder="e.g. DFW" Text="{Binding DepartingStation}"/>
+    <Entry x:Name="DepartureDate" Placeholder="Departure Date" Text="{Binding DepartureDate}"/>
+    <Entry x:Name="ArrivalStation" Placeholder="e.g. LHR" Text="{Binding ArrivalStation}"/>
+    <Entry x:Name="ArrivalDate" Placeholder="Arrival Date" Text="{Binding ArrivalDate}"/>
+    <Button x:Name="Submit" Text="Submit New Flight" Command="{Binding SubmitCommand}"/>
+  </StackLayout>
+</ContentPage>
